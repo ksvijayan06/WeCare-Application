@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="img-src 'self'">
+	<link rel="icon" href="images/favicon.jpg" width="150" type="image/x-icon">
+
+	<title>Feedback</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="home.html" rel="noopener noreferrer"><img src="images/WhiteLogo.png" alt="WeCare Logo" width="45"
+					 /></a>
+			<ul >
+				<li>
+
+					<a href="./user_profile.html">View Profile</a>
+				</li>
+				<li>
+
+					<a href="./myappointments.html">My Appoinments</a>
+				</li>
+				<li>
+
+					<a href="./user_home.html" >View coaches</a>
+				</li>
+				<li>
+
+					<a href="./feedback.html">Feedback</a>
+				</li>
+				<li >
+
+					<a href="./home.html">Logout</a>
+				</li>
+				<li >
+
+					<a href="./contact_us.html" >Contact Us</a>
+				</li>
+			</ul>
+			<label for="nav-toggle" >
+				<div ></div>
+				<div ></div>
+				<div ></div>
+			</label>
+		</nav>
+	</header>
+	<main>
+		<section >
+			<form>
+				<h3 >Feedback Form</h3>
+				<div >
+					<div >
+						<div >
+							<label for="cname"><b>Name </b></label>
+							<input name="name" type="text" required minlength="3"
+							 placeholder="David Maxwell" maxlength="50"><br /><br />
+						</div>
+						<div >
+							<label for="mail"><b>Email </b></label>
+							<input id="mail" name="email" type="email" required
+								placeholder="david@gmail.com"><br /><br />
+						</div>
+						<div >
+							<label for="phcode"><b>Phone Number </b></label> 
+							<select id="phcode" >
+								<option value="" selected disabled>Code</option>
+								<option value="+91">+91</option>
+								<option value="+44">+44</option>
+								<option value="+61">+61</option>
+								<option value="+503">+503</option>
+								<option value="+852">+852</option>
+							</select> <input id="mobile" name="mobileNumber" type="tel" pattern="[0-9]{10}"
+								placeholder="9867345210" required><br /><br />
+						</div>
+						<div>
+							<label for="spec"><b>Feedback Category </b></label>
+							<input id="spec" list="specialty" placeholder="Select category from the list"
+								required><datalist id="specialty" >
+								<option>Confidence Issues</option>
+								<option>Depression Issues</option>
+								<option>Overweight Issues</option>
+								<option>Hypertension Issues</option>
+							</datalist> <br /><br />
+						</div>
+						<div >
+							<b>How do you rate <br/>your overall <br/>Experience?</b>
+							
+							<span>
+							<input id="bad" name="experience" type="radio" required>
+							<label for="bad">Poor</label>
+							<input id="avg" name="experience" type="radio" required>
+							<label for="avg">Average</label>
+							<input id="good" name="experience" type="radio" required>
+							<label for="good">Good</label>
+							<input id="vgood" name="experience" type="radio" required checked>
+							<label for="vgood">Very Good</label><br /><br />
+						
+						</span>
+						</div>
+						<div >
+							<label for="feedback"><b>Feedback </b></label>
+							<textarea id="feedback"  name="myfeedback" required type="text" rows=4 cols=56
+								maxlength=60 placeholder="Please enter your feedback"></textarea> 
+								<br /><br />
+						</div>
+					</div>
+				</div>
+
+				<div >
+					<button data-message="Submit button" type="submit">
+						<a href="feedback_success.html" >Submit</a></button>&nbsp;&nbsp;
+					<button data-message="Reset button" type="reset">Reset</button>
+				</div>
+			</form>
+		</section>
+
+	</main>
+	<footer>
+		<p>
+			&copy; WeCare 2023-2024. All Rights Reserved.
+		</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="img-src 'self'">
+	<link rel="icon" href="images/favicon.jpg" width="150" type="image/x-icon">
+	<link rel="stylesheet" href="../CSS/home.css">
+	<link rel="stylesheet" href="../CSS/general.css">
+
+	<title>Login User</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div>
+				<a href="home.html"><img src="images/WhiteLogo.png" alt="WeCare Logo" width="50" /></a>
+			</div>
+			<div>
+				<a href="contact_us.html" target="_blank" rel="noopener"> Contact Us </a>
+			</div>
+		</nav>
+
+	</header>
+	<main class="login-main">
+
+		<section class="section-login-form">
+			<form method="post" class="login-form">
+				<img alt="User Profile Image" src="images/user.jpg" height="40px" width="40px">
+				<h3 class="form-heading">Login As User</h3>
+				<div class="input-field">
+					<label for="name">Username </label>
+					<input type="text" placeholder="Enter Username" name="username" id="user" required /><br />
+				</div>
+				<br>
+				<div class="input-field">
+
+					<label for="pass">Password </label>
+					<input type="password" placeholder="Enter Password" name="password" id="pass" required /><br />
+
+				</div>
+
+				<br>
+				<button class="login-btn" data-message="This is Login Button" type="submit">
+					<a href="user_home.html" class="login-link">Login</a></button>
+			</form><br /><br /><br />
+
+
+		</section>
+
+	</main>
+	<footer>
+		<p>
+			&copy; WeCare 2023-2024. All Rights Reserved.
+		</p>
+	</footer>
+</body>
+
+</html>

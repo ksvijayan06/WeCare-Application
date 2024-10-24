@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="img-src 'self'">
+	<link rel="icon" href="images/favicon.jpg" width="150" type="image/x-icon">
+	
+	<title>Schedule Appointment</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+		
+			<a href="home.html" rel="noopener noreferrer"><img src="images/WhiteLogo.png" alt="WeCare Logo" width="45"
+					 /></a>
+			<ul >
+				<li>
+
+					<a href="./user_profile.html">View Profile</a>
+				</li>
+				<li>
+
+					<a href="./myappointments.html">My Appoinments</a>
+				</li>
+				<li>
+
+					<a href="./user_home.html" >View coaches</a>
+				</li>
+				<li>
+
+					<a href="./feedback.html">Feedback</a>
+				</li>
+				<li >
+
+					<a href="./home.html">Logout</a>
+				</li>
+				<li >
+
+					<a href="./contact_us.html" >Contact Us</a>
+				</li>
+			</ul>
+			<label for="nav-toggle" >
+				<div ></div>
+				<div ></div>
+				<div ></div>
+			</label>
+		</nav>		
+	</header>
+	<main >
+		<section >
+			<img src="images/note_pen.png" alt="Note Pen Image" height="30" width="40">
+			<h3>Proceed with your Appointment</h3>
+			<div >	
+				<form >
+					<div >
+						<label id="labelID" for="appointmentDate">Date of Appointment</label>
+						<input  type="date" required/>
+					</div>
+					<div >
+						<label id="labelID" for="appointmentDate">Preffered Slot</label>
+						<div >
+							<input id="appointmentDate" name="slot" type="radio" required><label for="slot1">9 AM to 10 AM</label>
+							<input id="appointmentDate" name="slot" type="radio"><label for="slot2">10 AM to 11 AM</label>
+							<input id="appointmentDate" name="slot" type="radio"><label for="slot3">11 AM to 12 PM</label>
+							<input id="appointmentDate" name="slot" type="radio"><label for="slot4">2 PM to 3 PM</label>
+							<input id="appointmentDate" name="slot" type="radio"><label for="slot5">3 PM to 4 PM</label>
+							<input id="appointmentDate" name="slot" type="radio"><label for="slot6">4 PM to 5PM</label>
+						</div>
+					</div>
+					<button data-message="confirm appointment button for scheduling" type="submit">
+						<a href="schedule_success.html">Confirm Appointment</a></button>
+				   </form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>
+			&copy; WeCare 2023-2024. All Rights Reserved. 
+		</p>
+	</footer>
+</body>
+
+</html>
