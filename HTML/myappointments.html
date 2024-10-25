@@ -8,41 +8,41 @@
 	<title>User Appointments</title>
 	<meta http-equiv="Content-Security-Policy" content="img-src 'self'">
 	<link rel="icon" href="images/favicon.jpg" width="150" type="image/x-icon">
-	
+	<link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<input  type="checkbox">
-			<a href="home.html" rel="noopener noreferrer"><img src="images/WhiteLogo.png" alt="WeCare Logo" width="45"
-					/></a>
-			<ul>
-				<li>
+		<nav class="user-navbar">
 
-					<a href="./user_profile.html">View Profile</a>
-				</li>
-				<li>
+			<a href="home.html" rel="noopener noreferrer"><img src="images/WhiteLogo.png" alt="WeCare Logo"
+					width="45" /></a>
+			<ul class="user-navlinks">
+				<div class="navfront" >
+					<li>
+						<a href="./user_profile.html">View Profile</a>
+					</li>
+					<li>
+						<a href="./myappointments.html">My Appoinments</a>
+					</li>
+					<li>
+						<a href="./user_home.html">View coaches</a>
+					</li>
+					<li>
+						<a href="./feedback.html">Feedback</a>
+					</li>
 
-					<a href="./myappointments.html">My Appoinments</a>
-				</li>
-				<li>
+				</div>
 
-					<a href="./user_home.html">View coaches</a>
-				</li>
-				<li>
-
-					<a href="./feedback.html">Feedback</a>
-				</li>
-				<li >
-
-					<a href="./home.html">Logout</a>
-				</li>
-				<li >
-
-					<a href="./contact_us.html" >Contact Us</a>
-				</li>
+				<div class="navlast">
+					<li>
+						<a href="./home.html">Logout</a>
+					</li>
+					<li>
+						<a href="./contact_us.html">Contact Us</a>
+					</li>
+				</div>
 			</ul>
-			<label for="nav-toggle" >
+			<label for="nav-toggle">
 				<div></div>
 				<div></div>
 				<div></div>
@@ -50,7 +50,7 @@
 		</nav>
 	</header>
 	<main>
-		<section >
+		<section class="appointment-details">
 			<h3 >My Appointments</h3>
 			<table>
 				<tr>
@@ -112,14 +112,14 @@
 				</tr>
 			</table>	
 			<form >	
-				<button data-message="Reschedule button" type=submit>
+				<button class="reschedule-btn" data-message="Reschedule button" type=submit>
 					<a href="reschedule.html" >Reschedule</a>
 				</button>
 			    <span> &nbsp; </span>
-				<button data-message="Cancel button" type=submit> 
+				<button class="cancel-btn" data-message="Cancel button" type=submit> 
 					<a href="cancel.html" >Cancel</a> </button>
 				<span> &nbsp; </span>
-				<button data-message="Go back button" type=submit> 
+				<button class="back-btn" data-message="Go back button" type=submit> 
 					<a href="user_home.html" >Go Back</a></button>
 			</form>
 		</section>

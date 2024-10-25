@@ -11,6 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: 30px; */
 }
 
 nav div:nth-child(2) a{
@@ -53,7 +54,10 @@ footer {
 
 
 .login-btn, .btn-back button,
-.user-table button {
+.user-table button,
+.reschedule-btn,
+.cancel-btn,
+.back-btn {
     border: none;
     background-color: #e86127;
     padding: 5px 10px;
@@ -65,7 +69,10 @@ footer {
 
 
 .login-link, .btn-back a,
-.user-table a {
+.user-table a,
+.reschedule-btn a,
+.cancel-btn a,
+.back-btn a {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -218,4 +225,52 @@ flex-grow: 1;
 
 .user-profile-details tr td:nth-child(2){
     padding-left: 10px;
+}
+
+/********************* myappointments.html ***************/
+
+.appointment-details{
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 85vh;
+    
+}
+
+.appointment-details table, 
+.appointment-details td, 
+.appointment-details tr{
+    border: 2px solid rgb(199, 193, 193);
+    border-collapse: collapse;
+}
+
+.appointment-details td:nth-child(1){
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    line-height: 28px;
+}
+
+.appointment-details td:nth-child(2){
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    line-height: 28px;
+}
+.appointment-details table{
+    margin: 20px 0px;
+}
+
+.reschedule-btn,
+.cancel-btn,
+.back-btn{
+
 }
