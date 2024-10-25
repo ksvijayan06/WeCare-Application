@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+/********************* home.html ***************/
+
+/* navbar style when logoff */
 nav {
     background-color: rgb(75, 119, 240);
     display: flex;
@@ -49,7 +52,8 @@ footer {
 }
 
 
-.login-btn, .btn-back button{
+.login-btn, .btn-back button,
+.user-table button {
     border: none;
     background-color: #e86127;
     padding: 5px 10px;
@@ -60,14 +64,15 @@ footer {
 }
 
 
-.login-link, .btn-back a {
+.login-link, .btn-back a,
+.user-table a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
 
-/* login_user.html */
+/********************* login_user.html ***************/
 
 
 .section-login-form{
@@ -102,27 +107,19 @@ input-field label{
     color:  grey;
     background-color: #e86127;
 }
-/* 888888888888888888888888888888888 */
-/* user_home.html */
+
+/********************* user_home.html ***************/
+
 .user-navbar{
     display: flex;
     justify-content: space-evenly;
-    /* width: 100%; */
     z-index: 1;
     position: relative;
 }
 
-
-
 .user-navlinks{
     display: flex;
-    /* justify-content: space-evenly; */
     flex-grow: 1;
-    /* width: 100%; */
-   
-    
-    
-    
 }
 
 .user-navlinks a{
@@ -138,21 +135,19 @@ input-field label{
 display: flex;
 justify-content:space-around ;
 flex-grow: 1;    
-/* width: 60%; */
 }
 
 .navlast{
-    /* align-items: center; */
-    /* align-items: flex-end; */
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
-    /* width: 1%; */
 }
 
 .navfront a:hover, .navlast a:hover{
     text-decoration: underline;
 }
+
+/********************* user_profile.html ***************/
 
 .user-table,
 .user-table th,
@@ -182,19 +177,13 @@ flex-grow: 1;
 
 .user-profile-info{
     border: 1px solid grey;
-    /* width: 40%; */
     border-radius: 5px;
-    padding: 35px;
-    
+    padding: 20px;
     display: flex;
     flex-direction: column;  
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* padding: 40px; */
     align-items: center;
-   
-    
 }
 
 .user-profile-pic img{
@@ -213,5 +202,20 @@ flex-grow: 1;
 .btn-back{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.btn-back  button{
+    height: 35px;
+}
+
+.user-profile-details {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+}
+
+.user-profile-details tr td:nth-child(2){
+    padding-left: 10px;
 }
